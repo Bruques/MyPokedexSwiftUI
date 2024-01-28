@@ -10,24 +10,37 @@ import SwiftUI
 struct OnboardingView: View {
     @ObservedObject var viewModel: OnboardingViewModel
     var body: some View {
-        TabView(selection: $viewModel.currentStep) {
-            ForEach(0..<viewModel.onboardingSteps.count, id: \.self) { index in
-                VStack {
-                    trainersImages
-                    Spacer().frame(height: 45)
-                    titleAndDescription(title: viewModel.onboardingSteps[index].title, description: viewModel.onboardingSteps[index].description)
-                    Spacer().frame(height: 24)
-                    onboardingProgressView
-                    Spacer().frame(height: 24)
-                    continueButton(buttonText: viewModel.onboardingSteps[index].buttonText)
+        ZStack {
+            if viewModel.showSplash {
+                SplashView()
+            } else {
+                TabView(selection: $viewModel.currentStep) {
+                    ForEach(0..<viewModel.onboardingSteps.count, id: \.self) { index in
+                        VStack {
+                            trainersImages
+                            Spacer().frame(height: 45)
+                            titleAndDescription(title: viewModel.onboardingSteps[index].title, description: viewModel.onboardingSteps[index].description)
+                            Spacer().frame(height: 24)
+                            onboardingProgressView
+                            Spacer().frame(height: 24)
+                            continueButton(buttonText: viewModel.onboardingSteps[index].buttonText)
+                        }
+                        .frame(maxWidth: .infinity,
+                               maxHeight: .infinity,
+                               alignment: .bottom)
+                        .padding()
+                    }
                 }
-                .frame(maxWidth: .infinity, 
-                       maxHeight: .infinity,
-                       alignment: .bottom)
-                .padding()
+                .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
             }
         }
-        .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
+        .onAppear {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                withAnimation {
+                    self.viewModel.showSplash = false
+                }
+            }
+        }
     }
     
     @ViewBuilder
@@ -92,7 +105,6 @@ struct OnboardingView: View {
                     .foregroundStyle(Color("AzulEscuro"))
             }
         }
-        
     }
     
     func continueButton(buttonText: String) -> some View {

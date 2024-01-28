@@ -23,6 +23,7 @@
 		0E7139272B66F283004033C4 /* MyColors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E7139262B66F283004033C4 /* MyColors.xcassets */; };
 		0E7139292B66FC05004033C4 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7139282B66FC05004033C4 /* OnboardingViewModel.swift */; };
 		0E71392B2B66FCDD004033C4 /* OnboardingStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E71392A2B66FCDD004033C4 /* OnboardingStep.swift */; };
+		0E71392E2B67053A004033C4 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E71392D2B67053A004033C4 /* SplashView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		0E7139262B66F283004033C4 /* MyColors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = MyColors.xcassets; sourceTree = "<group>"; };
 		0E7139282B66FC05004033C4 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
 		0E71392A2B66FCDD004033C4 /* OnboardingStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingStep.swift; sourceTree = "<group>"; };
+		0E71392D2B67053A004033C4 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 		0E4FB36B2B65A9D900E35366 /* MyPokedexSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				0E71392C2B670525004033C4 /* Splash */,
 				0E4FB3A82B65B13200E35366 /* Info.plist */,
 				0E4FB39C2B65B0F500E35366 /* Utils */,
 				0E4FB3962B65AE1F00E35366 /* Onboarding */,
@@ -210,6 +213,14 @@
 				0E7139262B66F283004033C4 /* MyColors.xcassets */,
 			);
 			path = Assets;
+			sourceTree = "<group>";
+		};
+		0E71392C2B670525004033C4 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				0E71392D2B67053A004033C4 /* SplashView.swift */,
+			);
+			path = Splash;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -353,6 +364,7 @@
 				0E4FB36D2B65A9D900E35366 /* MyPokedexSwiftUIApp.swift in Sources */,
 				0E71392B2B66FCDD004033C4 /* OnboardingStep.swift in Sources */,
 				0E7139292B66FC05004033C4 /* OnboardingViewModel.swift in Sources */,
+				0E71392E2B67053A004033C4 /* SplashView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
