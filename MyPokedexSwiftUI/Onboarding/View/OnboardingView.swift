@@ -9,33 +9,17 @@ import SwiftUI
 
 struct OnboardingView: View {
     @ObservedObject var viewModel: OnboardingViewModel
+    
     var body: some View {
         ZStack {
             if viewModel.showSplash {
                 SplashView()
             } else {
-                TabView(selection: $viewModel.currentStep) {
-                    ForEach(0..<viewModel.onboardingSteps.count, id: \.self) { index in
-                        VStack {
-                            trainersImages
-                            Spacer().frame(height: 45)
-                            titleAndDescription(title: viewModel.onboardingSteps[index].title, description: viewModel.onboardingSteps[index].description)
-                            Spacer().frame(height: 24)
-                            onboardingProgressView
-                            Spacer().frame(height: 24)
-                            continueButton(buttonText: viewModel.onboardingSteps[index].buttonText)
-                        }
-                        .frame(maxWidth: .infinity,
-                               maxHeight: .infinity,
-                               alignment: .bottom)
-                        .padding()
-                    }
-                }
-                .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
+                onboardingTabView
             }
         }
         .onAppear {
-            DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0) {
                 withAnimation {
                     self.viewModel.showSplash = false
                 }
@@ -43,9 +27,34 @@ struct OnboardingView: View {
         }
     }
     
+    var onboardingTabView: some View {
+        NavigationView {
+            TabView(selection: $viewModel.currentStep) {
+                ForEach(Array(viewModel.onboardingSteps.enumerated()), id: \.offset) { index, step in
+                    VStack {
+                        trainersImages(stepIndex: index)
+                        Spacer().frame(height: 45)
+                        titleAndDescription(title: step.title,
+                                            description: step.description)
+                        Spacer().frame(height: 50)
+                        continueButton(buttonText: step.buttonText)
+                    }
+                    .frame(maxWidth: .infinity,
+                           maxHeight: .infinity,
+                           alignment: .bottom)
+                    .padding()
+                }
+            }
+            .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
+            .overlay {
+                onboardingIndicator
+            }
+        }
+    }
+    
     @ViewBuilder
-    var trainersImages: some View {
-        if viewModel.currentStep == 0 {
+    func trainersImages(stepIndex: Int) -> some View {
+        if stepIndex == 0 {
             ZStack {
                 Image("trainer1")
                     .offset(x: -50)
@@ -72,55 +81,64 @@ struct OnboardingView: View {
     func titleAndDescription(title: String, description: String) -> some View {
         VStack(spacing: 16) {
             Text(title)
-                .font(Font.custom("Poppins-Medium", size: 26))
+                .font(FontMaker.makeFont(.poppinsMedium, 26))
                 .multilineTextAlignment(.center)
-                .foregroundStyle(Color("Primaria"))
+                .foregroundStyle(PokedexColors.primary)
             Text(description)
-                .font(Font.custom("Poppins-Regular", size: 14))
+                .font(FontMaker.makeFont(.poppinsRegular, 14))
                 .multilineTextAlignment(.center)
-                .foregroundStyle(Color("Secundaria"))
+                .foregroundStyle(PokedexColors.secondary)
         }
     }
     
     @ViewBuilder
-    var onboardingProgressView: some View {
+    func continueButton(buttonText: String) -> some View {
         if viewModel.currentStep == 0 {
-            HStack {
+            Button(action: {
+                withAnimation {
+                    viewModel.currentStep = 1
+                }
+            }, label: {
                 Rectangle()
-                    .frame(width: 28, height: 9)
+                    .frame(height: 58)
                     .clipShape(.capsule)
-                    .foregroundStyle(Color("AzulEscuro"))
-                Circle()
-                    .frame(width: 9, height: 9)
-                    .foregroundStyle(Color(.lightGray))
-            }
+                    .foregroundStyle(PokedexColors.blue)
+                    .overlay {
+                        Text(buttonText)
+                            .foregroundStyle(.white)
+                            .font(FontMaker.makeFont(.poppinsSemiBold, 18))
+                    }
+            })
         } else {
-            HStack {
-                Circle()
-                    .frame(width: 9, height: 9)
-                    .foregroundStyle(Color(.lightGray))
+            NavigationLink {
+                LoginOrSignUpView()
+            } label: {
                 Rectangle()
-                    .frame(width: 28, height: 9)
+                    .frame(height: 58)
                     .clipShape(.capsule)
-                    .foregroundStyle(Color("AzulEscuro"))
+                    .foregroundStyle(PokedexColors.blue)
+                    .overlay {
+                        Text(buttonText)
+                            .foregroundStyle(.white)
+                            .font(FontMaker.makeFont(.poppinsSemiBold, 18))
+                    }
             }
         }
     }
     
-    func continueButton(buttonText: String) -> some View {
-        Button(action: {
-            viewModel.currentStep = 1
-        }, label: {
-            Rectangle()
-                .frame(height: 58)
-                .clipShape(.capsule)
-                .foregroundStyle(Color("AzulEscuro"))
-                .overlay {
-                    Text(buttonText)
-                        .foregroundStyle(.white)
-                        .font(Font.custom("Poppins-SemiBold", size: 18))
-                }
-        })
+    var onboardingIndicator: some View {
+        HStack {
+            ForEach(viewModel.onboardingSteps.indices, id: \.self) { index in
+                    Capsule()
+                    .foregroundStyle(viewModel.currentStep == index ? PokedexColors.blue : PokedexColors.secondary)
+                    .frame(width: viewModel.currentStep == index ? 28 : 9, height: 9)
+                    .animation(.bouncy, value: viewModel.currentStep)
+            }
+        }
+        .frame(maxWidth: .infinity,
+               maxHeight: .infinity,
+               alignment: .bottom)
+        .padding(.bottom, 95)
     }
     
 }
