@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyALCuncP-TPMg0-MjB3YvstK4mSOua2syY</string>
+	<key>GCM_SENDER_ID</key>
+	<string>636088820817</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>bruno-marques.MyPokedexSwiftUI</string>
+	<key>PROJECT_ID</key>
+	<string>mypokedex-965b7</string>
+	<key>STORAGE_BUCKET</key>
+	<string>mypokedex-965b7.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:636088820817:ios:4c1f0f8f364ab5efd70470</string>
+</dict>
+</plist>

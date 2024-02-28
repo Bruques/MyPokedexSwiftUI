@@ -12,4 +12,7 @@ enum PokedexColors {
     static let secondary = Color("Secundaria")
     static let blue = Color("AzulEscuro")
     static let backgroundBlue = Color("AzulBackground")
+    static let lightGray = Color("LightGray")
+    static let gray700 = Color("Gray700")
+    static let gray100 = Color("Gray100")
 }

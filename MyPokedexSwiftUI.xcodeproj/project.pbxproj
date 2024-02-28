@@ -23,6 +23,14 @@
 		0E4FB3A52B65B11D00E35366 /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0E4FB3A02B65B11D00E35366 /* Poppins-Medium.ttf */; };
 		0E4FB3A62B65B11D00E35366 /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0E4FB3A12B65B11D00E35366 /* Poppins-Light.ttf */; };
 		0E4FB3A72B65B11D00E35366 /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0E4FB3A22B65B11D00E35366 /* Poppins-SemiBold.ttf */; };
+		0E6C55872B8BD106000FA7EF /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6C55862B8BD106000FA7EF /* SignUpView.swift */; };
+		0E6C55892B8BD4F0000FA7EF /* SignUpViewModel().swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6C55882B8BD4F0000FA7EF /* SignUpViewModel().swift */; };
+		0E6C558D2B8BDF82000FA7EF /* MyCustomToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6C558C2B8BDF82000FA7EF /* MyCustomToolbar.swift */; };
+		0E6C558F2B8BE310000FA7EF /* SignUpEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6C558E2B8BE310000FA7EF /* SignUpEmailView.swift */; };
+		0E6C55912B8BEB9F000FA7EF /* SignUpPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6C55902B8BEB9F000FA7EF /* SignUpPasswordView.swift */; };
+		0E6C55932B8BF03F000FA7EF /* SignUpUsernameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6C55922B8BF03F000FA7EF /* SignUpUsernameView.swift */; };
+		0E6C55952B8BF354000FA7EF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0E6C55942B8BF354000FA7EF /* GoogleService-Info.plist */; };
+		0E6C55992B8BF3CE000FA7EF /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 0E6C55982B8BF3CE000FA7EF /* FirebaseAuth */; };
 		0E7139272B66F283004033C4 /* MyColors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E7139262B66F283004033C4 /* MyColors.xcassets */; };
 		0E7139292B66FC05004033C4 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7139282B66FC05004033C4 /* OnboardingViewModel.swift */; };
 		0E71392B2B66FCDD004033C4 /* OnboardingStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E71392A2B66FCDD004033C4 /* OnboardingStep.swift */; };
@@ -67,6 +75,13 @@
 		0E4FB3A12B65B11D00E35366 /* Poppins-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Light.ttf"; sourceTree = "<group>"; };
 		0E4FB3A22B65B11D00E35366 /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
 		0E4FB3A82B65B13200E35366 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		0E6C55862B8BD106000FA7EF /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		0E6C55882B8BD4F0000FA7EF /* SignUpViewModel().swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SignUpViewModel().swift"; sourceTree = "<group>"; };
+		0E6C558C2B8BDF82000FA7EF /* MyCustomToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCustomToolbar.swift; sourceTree = "<group>"; };
+		0E6C558E2B8BE310000FA7EF /* SignUpEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpEmailView.swift; sourceTree = "<group>"; };
+		0E6C55902B8BEB9F000FA7EF /* SignUpPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPasswordView.swift; sourceTree = "<group>"; };
+		0E6C55922B8BF03F000FA7EF /* SignUpUsernameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpUsernameView.swift; sourceTree = "<group>"; };
+		0E6C55942B8BF354000FA7EF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0E7139262B66F283004033C4 /* MyColors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = MyColors.xcassets; sourceTree = "<group>"; };
 		0E7139282B66FC05004033C4 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
 		0E71392A2B66FCDD004033C4 /* OnboardingStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingStep.swift; sourceTree = "<group>"; };
@@ -78,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E6C55992B8BF3CE000FA7EF /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,6 +136,10 @@
 			isa = PBXGroup;
 			children = (
 				0E13E71B2B6D6D5200B4FF4D /* LoginOrSignUpView.swift */,
+				0E6C55862B8BD106000FA7EF /* SignUpView.swift */,
+				0E6C558E2B8BE310000FA7EF /* SignUpEmailView.swift */,
+				0E6C55902B8BEB9F000FA7EF /* SignUpPasswordView.swift */,
+				0E6C55922B8BF03F000FA7EF /* SignUpUsernameView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -127,6 +147,7 @@
 		0E13E7192B6D6D3500B4FF4D /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				0E6C55882B8BD4F0000FA7EF /* SignUpViewModel().swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -145,6 +166,7 @@
 				0E4FB37C2B65A9DA00E35366 /* MyPokedexSwiftUITests */,
 				0E4FB3862B65A9DA00E35366 /* MyPokedexSwiftUIUITests */,
 				0E4FB36A2B65A9D900E35366 /* Products */,
+				0E6C55972B8BF3CE000FA7EF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -161,6 +183,8 @@
 		0E4FB36B2B65A9D900E35366 /* MyPokedexSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				0E6C55942B8BF354000FA7EF /* GoogleService-Info.plist */,
+				0E6C558A2B8BDF44000FA7EF /* Commons */,
 				0E13E7172B6D6D2700B4FF4D /* LoginAndSignUp */,
 				0E71392C2B670525004033C4 /* Splash */,
 				0E4FB3A82B65B13200E35366 /* Info.plist */,
@@ -255,6 +279,29 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		0E6C558A2B8BDF44000FA7EF /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				0E6C558B2B8BDF4E000FA7EF /* ReusableComponents */,
+			);
+			path = Commons;
+			sourceTree = "<group>";
+		};
+		0E6C558B2B8BDF4E000FA7EF /* ReusableComponents */ = {
+			isa = PBXGroup;
+			children = (
+				0E6C558C2B8BDF82000FA7EF /* MyCustomToolbar.swift */,
+			);
+			path = ReusableComponents;
+			sourceTree = "<group>";
+		};
+		0E6C55972B8BF3CE000FA7EF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		0E7139252B66F238004033C4 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
@@ -288,6 +335,9 @@
 			dependencies = (
 			);
 			name = MyPokedexSwiftUI;
+			packageProductDependencies = (
+				0E6C55982B8BF3CE000FA7EF /* FirebaseAuth */,
+			);
 			productName = MyPokedexSwiftUI;
 			productReference = 0E4FB3692B65A9D900E35366 /* MyPokedexSwiftUI.app */;
 			productType = "com.apple.product-type.application";
@@ -360,6 +410,9 @@
 				Base,
 			);
 			mainGroup = 0E4FB3602B65A9D900E35366;
+			packageReferences = (
+				0E6C55962B8BF3B3000FA7EF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 0E4FB36A2B65A9D900E35366 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -377,6 +430,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E4FB3A32B65B11D00E35366 /* Poppins-Regular.ttf in Resources */,
+				0E6C55952B8BF354000FA7EF /* GoogleService-Info.plist in Resources */,
 				0E4FB3A72B65B11D00E35366 /* Poppins-SemiBold.ttf in Resources */,
 				0E4FB3A62B65B11D00E35366 /* Poppins-Light.ttf in Resources */,
 				0E4FB3742B65A9DA00E35366 /* Preview Assets.xcassets in Resources */,
@@ -411,11 +465,17 @@
 				0E4FB39B2B65AE5900E35366 /* OnboardingView.swift in Sources */,
 				0E13E7162B6D6BA200B4FF4D /* FontMaker.swift in Sources */,
 				0E4FB36F2B65A9D900E35366 /* ContentView.swift in Sources */,
+				0E6C55892B8BD4F0000FA7EF /* SignUpViewModel().swift in Sources */,
 				0E13E7142B6D69F000B4FF4D /* PokedexColors.swift in Sources */,
+				0E6C55932B8BF03F000FA7EF /* SignUpUsernameView.swift in Sources */,
 				0E4FB36D2B65A9D900E35366 /* MyPokedexSwiftUIApp.swift in Sources */,
 				0E71392B2B66FCDD004033C4 /* OnboardingStep.swift in Sources */,
+				0E6C55872B8BD106000FA7EF /* SignUpView.swift in Sources */,
+				0E6C558D2B8BDF82000FA7EF /* MyCustomToolbar.swift in Sources */,
 				0E13E71C2B6D6D5200B4FF4D /* LoginOrSignUpView.swift in Sources */,
 				0E7139292B66FC05004033C4 /* OnboardingViewModel.swift in Sources */,
+				0E6C55912B8BEB9F000FA7EF /* SignUpPasswordView.swift in Sources */,
+				0E6C558F2B8BE310000FA7EF /* SignUpEmailView.swift in Sources */,
 				0E71392E2B67053A004033C4 /* SplashView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -742,6 +802,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0E6C55962B8BF3B3000FA7EF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.21.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0E6C55982B8BF3CE000FA7EF /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0E6C55962B8BF3B3000FA7EF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0E4FB3612B65A9D900E35366 /* Project object */;
 }

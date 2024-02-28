@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "6E3DEB72-656D-4928-8A8E-BC6C29A6BD93"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3049B4F9-AD48-4DFC-86D2-124E7E75B55B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyPokedexSwiftUI/LoginAndSignUp/View/SignUpUsernameView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
+            landmarkName = "continueButton"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "3049B4F9-AD48-4DFC-86D2-124E7E75B55B - 5ec1d4d63a2a0119"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in MyPokedexSwiftUI.SignUpUsernameView.continueButton.getter : some"
+                  moduleName = "MyPokedexSwiftUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/brunomarques/Documents/PersonalProjects/SwiftUI%20Projetcts/MyPokedexSwiftUI/MyPokedexSwiftUI/LoginAndSignUp/View/SignUpUsernameView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "59"
+                  endingLineNumber = "59"
+                  offsetFromSymbolStart = "100">
+               </Location>
+               <Location
+                  uuid = "3049B4F9-AD48-4DFC-86D2-124E7E75B55B - a9fe301e1c8b0096"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable () async throws -&gt; () in closure #1 () -&gt; () in MyPokedexSwiftUI.SignUpUsernameView.continueButton.getter : some"
+                  moduleName = "MyPokedexSwiftUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/brunomarques/Documents/PersonalProjects/SwiftUI%20Projetcts/MyPokedexSwiftUI/MyPokedexSwiftUI/LoginAndSignUp/View/SignUpUsernameView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "59"
+                  endingLineNumber = "59"
+                  offsetFromSymbolStart = "72">
+               </Location>
+               <Location
+                  uuid = "3049B4F9-AD48-4DFC-86D2-124E7E75B55B - 6f794e94bc341b4a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in closure #1 () -&gt; () in MyPokedexSwiftUI.SignUpUsernameView.continueButton.getter : some"
+                  moduleName = "MyPokedexSwiftUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/brunomarques/Documents/PersonalProjects/SwiftUI%20Projetcts/MyPokedexSwiftUI/MyPokedexSwiftUI/LoginAndSignUp/View/SignUpUsernameView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "59"
+                  endingLineNumber = "59"
+                  offsetFromSymbolStart = "32">
+               </Location>
+               <Location
+                  uuid = "3049B4F9-AD48-4DFC-86D2-124E7E75B55B - 6f794e94bc341b4a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in closure #1 () -&gt; () in MyPokedexSwiftUI.SignUpUsernameView.continueButton.getter : some"
+                  moduleName = "MyPokedexSwiftUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/brunomarques/Documents/PersonalProjects/SwiftUI%20Projetcts/MyPokedexSwiftUI/MyPokedexSwiftUI/LoginAndSignUp/View/SignUpUsernameView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "59"
+                  endingLineNumber = "59"
+                  offsetFromSymbolStart = "64">
+               </Location>
+               <Location
+                  uuid = "3049B4F9-AD48-4DFC-86D2-124E7E75B55B - a344f923feeef8b3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for closure #1 @Sendable () async throws -&gt; () in closure #1 () -&gt; () in MyPokedexSwiftUI.SignUpUsernameView.continueButton.getter : some"
+                  moduleName = "MyPokedexSwiftUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/brunomarques/Documents/PersonalProjects/SwiftUI%20Projetcts/MyPokedexSwiftUI/MyPokedexSwiftUI/LoginAndSignUp/View/SignUpUsernameView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "59"
+                  endingLineNumber = "59"
+                  offsetFromSymbolStart = "36">
+               </Location>
+               <Location
+                  uuid = "3049B4F9-AD48-4DFC-86D2-124E7E75B55B - a74a262c8b8f1748"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in closure #1 () -&gt; () in MyPokedexSwiftUI.SignUpUsernameView.continueButton.getter : some"
+                  moduleName = "MyPokedexSwiftUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/brunomarques/Documents/PersonalProjects/SwiftUI%20Projetcts/MyPokedexSwiftUI/MyPokedexSwiftUI/LoginAndSignUp/View/SignUpUsernameView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "59"
+                  endingLineNumber = "59"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "3049B4F9-AD48-4DFC-86D2-124E7E75B55B - 7b2d5270e2b2954f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in closure #1 () -&gt; () in MyPokedexSwiftUI.SignUpUsernameView.continueButton.getter : some"
+                  moduleName = "MyPokedexSwiftUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/brunomarques/Documents/PersonalProjects/SwiftUI%20Projetcts/MyPokedexSwiftUI/MyPokedexSwiftUI/LoginAndSignUp/View/SignUpUsernameView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "59"
+                  endingLineNumber = "59"
+                  offsetFromSymbolStart = "32">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
